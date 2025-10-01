@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    <title>Result Checker</title>
+</head>
+<style>
+    label {
+        font-weight: bolder;
+        /* background-color:bisque; */
+        background-position: 10px;
+    }
+
+    button {
+        background-color:beige;
+        border-radius: 2px;
+    }
+    button:hover {
+        background-color: brown;
+        cursor: pointer;
+    }
+
+    /* div {
+        border: beige;
+        background-color: cyan;
+        display:ruby-base-container;
+        margin-block-start: auto;
+        width: 20%;
+        border-radius: 5%; */
+    /* } */
+    .box {
+        text-align: center;
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <h1 style="font-size:larger;color:brown">RESULT CHECKER</h1>
+    <form action="/form/submit" method="post">
+        <label for="matric">Enter matric number: </label>
+        <input type="text" id="matric" name="matric" required><br>
+        <button type="submit">Check</button>
+    </form>
+</body>
+    <% if(entry){ %>
+        <div class="box">
+            <h1>Result Found:</h1>
+            <P>Name: <%= entry.name %></P>
+            <p>Matric: <%= entry.matric %></p>
+            <p>Score: <%= entry.result %></p> <%}
+            else {%>
+            <p style="color:red">Cridential Not Match</p>
+        <%} %>
+        </div>
+</html>

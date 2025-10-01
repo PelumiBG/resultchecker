@@ -1,0 +1,18 @@
+
+[
+    {
+        "name":"John Doe",
+        "matric":"Edu/19/20/0537",
+        "result":60
+    },
+    {
+        "name":"Joshua Victor",
+        "matric":"Edu/19/20/0229",
+        "result":49
+    },
+    {
+        "name":"Ben Jacob Doe",
+        "matric":"Edu/19/20/1537",
+        "result":77
+    }
+]
