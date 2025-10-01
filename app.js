@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.set('view engine','ejs');
 app.set("views", path.join(__dirname, "views"));
 
-app.use('/form', formRoute);
+app.use('/', formRoute);
 
 app.listen(7000, () => {
     console.log('server running at http://localhost:7000/');

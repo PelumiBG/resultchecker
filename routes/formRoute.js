@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/', (req,res) => {
     console.log(req)
-    res.redirect('form',{entry:null})
+    res.render('form',{entry:null})
 
 });
 
